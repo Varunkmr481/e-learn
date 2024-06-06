@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Comaptible" content="IE=edge" />
+    <title>StudyCo</title>
+    <meta name="desciption" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script>
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop()) {
+          $("nav").addClass("black");
+        } else {
+          $("nav").removeClass("black");
+        }
+      });
+    </script>
+
+	<style>
+		.service-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 100px;
+      }
+
+      .service-button button {
+        background-color: #1e5be0;
+        color: white;
+        padding: 0px 30px;
+        border: none;
+		margin-top: 20px;
+        border-radius: 5px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .service-button button a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .service-button button:hover {
+        background-color: #1649b1;
+      }
+	</style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header id="header">
+      <nav>
+        <div class="logo">StudyCo</div>
+        <ul>
+          <li><a class="active" href="">Home</a></li>
+          <!-- <li><a href="#portfolio_section">Portfolio</a></li> -->
+          <li><a href="#services_section">Services</a></li>
+          <li><a href="#contactus_section">Contact</a></li>
+        </ul>
+        <!-- <div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="images/icon/search.png" alt="search" onclick=slide()></div> -->
+        <a class="get-started" href="login.html">Login Here</a>
+        <img
+          src="images/icon/menu.png"
+          class="menu"
+          onclick="sideMenu(0)"
+          alt="menu"
+        />
+      </nav>
+      <div class="head-container">
+        <div class="quote">
+          <p>
+            Master Your Future: Unlock Unlimited Learning Potential with Our
+            Dynamic E-Learning Platform
+          </p>
+          <h5>
+            Unlock Your Potential with Our Top-Rated E-Learning Platform:
+            Courses, Certifications, and Career Advancement
+          </h5>
+          <div class="play">
+            <img src="images/icon/play.png" alt="play" /><span
+              ><a
+                href="https://youtu.be/uPNfX-gV3zM?si=_5P-SRo_Qr3JlgjV"
+                target="_blank"
+                >Watch Now</a
+              ></span
+            >
+          </div>
+        </div>
+        <div class="svg-image">
+          <img src="images/extra/bg.png" alt="svg" />
+        </div>
+      </div>
+    </header>
+
+
+    <!-- ABOUT -->
+    <div class="diffSection" id="about_section">
+      <center><p style="font-size: 50px; padding: 100px">About Us</p></center>
+      <div class="about-content">
+        <div class="side-image">
+          <img
+            class="sideImage"
+            style="width: 650px"
+            src="images/extra/e3.jpg"
+          />
+        </div>
+        <div class="side-text">
+          <h2>
+            Empowering Your Learning Journey with StudyCo: Where Education Meets
+            Support 24/7!
+          </h2>
+          <p>
+            Welcome to StudyCo, your one-stop destination for comprehensive
+            education support! At StudyCo, we're committed to enhancing your
+            learning journey, whether you're exploring IT courses or non-IT
+            disciplines. Dive into our extensive database to discover courses
+            tailored to your aspirations. Fuel your preparation with our curated
+            sample papers and interactive quizzes, designed to sharpen your
+            skills. What sets us apart is our unwavering 24/7 support, ensuring
+            you're never alone on your academic quest. Join our thriving
+            community at StudyCo and embark on a transformative learning
+            experience. Your success is our mission, and we're here every step
+            of the way.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- SERVICES -->
+    <div class="service-swipe">
+      <div class="diffSection" id="services_section">
+        <center>
+          <p
+            style="
+              font-size: 50px;
+              padding: 100px;
+              padding-bottom: 40px;
+              color: #fff;
+            "
+          >
+            Courses
+          </p>
+        </center>
+        <p style="color: white; text-align: center; line-height: 200% ; margin: 0 250px;">
+          Embark on a Digital Journey: Explore our Comprehensive Computer
+          Courses Tailored for Every Skill Level. 
+          From Fundamentals to Advanced Techniques, Empower Yourself with
+          In-Demand Skills for Today's Tech-Driven World.
+        
+          Join thousands of learners worldwide who are transforming their
+          careers and futures with our cutting-edge computer courses. Our
+          engaging and interactive modules are designed to cater to all learning
+          styles, ensuring that you grasp concepts with ease and confidence.
+          Dive deep into programming languages like Python, Java, and
+          JavaScript, or explore the intricacies of web development,
+          cybersecurity, data science, and beyond.
+
+          With our flexible learning approach, you can study at your own pace
+          and on your schedule, making it easier than ever to balance your
+          education with your other commitments. Our industry-leading
+          instructors bring real-world expertise to the virtual classroom,
+          offering practical insights and hands-on projects that prepare you for
+          success in the rapidly evolving tech landscape
+        </p>
+
+		<div class="service-button">
+			<button ><a href="./subjects/course.html">View courses</a></button>
+		</div>
+      </div>
+     
+	</div>
+
+
+    <!-- Sliding Information -->
+    <marquee
+      style="
+        background: linear-gradient(to right, #1e5be0, #070e5f);
+        margin-top: 50px;
+      "
+      direction="left"
+      onmouseover="this.stop()"
+      onmouseout="this.start()"
+      scrollamount="20"
+      ><div class="marqu">
+        “Education is the passport to the future, for tomorrow belongs to those
+        who prepare for it today.” “Your attitude, not your aptitude, will
+        determine your altitude.” “If you think education is expensive, try
+        ignorance.” “The only person who is educated is the one who has learned
+        how to learn …and change.”
+      </div></marquee
+    >
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="left-col">
+          <!-- <img src="images/icon/logo - Copy.png" style="width: 200px;"> -->
+          <div class="logo" style="margin-bottom: 15px; width: 132px">
+            StudyCo
+          </div>
+          <div class="social-media">
+            <a href="#"><img src="images/icon\fb.png" /></a>
+            <a href="#"><img src="images/icon\insta.png" /></a>
+            <a href="#"><img src="images/icon\tt.png" /></a>
+            <a href="#"><img src="images/icon\ytube.png" /></a>
+            <a href="#"><img src="images/icon\linkedin.png" /></a>
+          </div>
+          <br /><br />
+          <p class="rights-text">
+            Copyright © 2021 Created By Varun Kumar All Rights Reserved.
+          </p>
+          <br />
+          <p>
+            <img src="images/icon/location.png" /> Sharda University<br />
+            Greater Noida, Uttar Pradesh-201310
+          </p>
+          <br />
+          <p>
+            <img src="images/icon/phone.png" /> +91-9818-005-312<br /><img
+              src="images/icon/mail.png"
+            />&nbsp; varunkmr4160@gmail.com
+          </p>
+        </div>
+        <div class="right-col">
+          <h1 style="color: #fff">Our Newsletter</h1>
+          <div class="border"></div>
+          <br />
+          <p>Enter Your Email to get our News and updates.</p>
+          <form class="newsletter-form">
+            <input class="txtb" type="email" placeholder="Enter Your Email" />
+            <input class="btn" type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
